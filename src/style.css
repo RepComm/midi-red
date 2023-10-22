@@ -1,0 +1,92 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color: #cbabce;
+	background-color: #2e2e2e;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	overflow:hidden;
+}
+
+.container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow:hidden;
+}
+
+.channels {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	padding-bottom: 2em;
+}
+
+.channel {
+	background-color: #414141;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	min-width: 40em;
+	margin-left: 1em;
+}
+.channel-id {
+	font-size: large;
+	color: #f5d9f5;
+}
+.channel-content {
+	max-height: 40em;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+.note {
+	display: flex;
+	flex-direction: column;
+	background-color: #4d4d4d;
+
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.5em;
+	padding-bottom: 1em;
+}
+.note-id {
+	color: white;
+
+}
+.field {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 4em;
+	padding-right: 4em;
+}
+.field-input {
+	border: none;
+	background-color: #2e2e2e;
+	border-radius: 0.5em;
+	text-indent: 1em;
+}
